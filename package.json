@@ -4,8 +4,10 @@
   "description": "webpack boiler plate for threejs and gsap website",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --progress --config webpack.config.build.js",
-    "development": "webpack serve --progress --config webpack.config.development.js",
+    "backend:build": "node app.js",
+    "backend:development": "nodemon app.js",
+    "frontend:build": "webpack --progress --config webpack.config.build.js",
+    "forntend:development": "webpack serve --progress --config webpack.config.development.js",
     "start": "npm run development"
   },
   "author": "Boris Pericat",
@@ -28,6 +30,7 @@
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-optipng": "^8.0.0",
     "mini-css-extract-plugin": "^2.7.2",
+    "nodemon": "^2.0.21",
     "postcss-loader": "^7.0.2",
     "raw-loader": "^4.0.2",
     "sass": "^1.58.3",
@@ -37,5 +40,8 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
