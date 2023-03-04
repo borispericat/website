@@ -1,4 +1,10 @@
-extends layout.pug 
+extends ../base.pug 
+
+block variables 
+    - var template = 'about'
 
 block content 
     h1.collections_title About
+
+block modal 
+    .modal .modal__wrapper
