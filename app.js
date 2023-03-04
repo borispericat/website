@@ -15,7 +15,7 @@ app.get('/about', (req, res) => {
   res.render('pages/about')
 })
 
-app.get('/collection', (req, res) => {
+app.get('/collections', (req, res) => {
   res.render('pages/collections')
 })
 
