@@ -23,8 +23,6 @@ app.get('/detail/:id', (req, res) => {
   res.render('pages/detail')
 })
 
-
-
 app.listen(port, () => {
   console.log(`listening port: ${port}`)
 })
