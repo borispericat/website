@@ -1,5 +1,5 @@
 const prismic = require('@prismicio/client')
-const prismicDOM = require('prismic-dom')
+const PrismicDOM = require('prismic-dom')
 require('dotenv').config()
 const express = require('express')
 const path = require('path')
@@ -22,7 +22,7 @@ app.use((req, res, next) => {
     endpoint: process.env.PRISMIC_ENDPOINT,
     linkResolver: handleLinkResolver
   }
-  res.locals.prismicDOM = prismicDOM
+  res.locals.PrismicDOM = PrismicDOM
   next()
 })
 
@@ -39,7 +39,13 @@ app.get('/about', async (req, res) => {
       prismic.predicates.any('document.type', ['about', 'meta'])).then(response => {
       const { results } = response
       const [about, meta] = results
-      console.log(about, meta)
+      // console.log(about.data.body)
+      console.log(about.data.body.section)
+
+      about.data.gallery.forEach(media => {
+        console.log(media)
+      })
+      // console.log(about, meta)
       res.render('pages/about', {
         meta,
         about
