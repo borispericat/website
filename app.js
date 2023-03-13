@@ -100,14 +100,16 @@ app.get('/collections', (req, res) => {
 })
 
 app.get('/detail/:uid', async (req, res) => {
-  console.log(req.params.uid)
   const api = await initApi(req)
   const defaults = await handleRequest(api)
 
-  console.log(defaults.about.data.body[2])
+  const product = await api.getByUID('product', req.params.uid, {
+    fetchLinks: 'collection.title'
+  })
 
-  res.render('pages/detail/:uid', {
-    ...defaults
+  res.render('pages/detail', {
+    ...defaults,
+    product
   })
 })
 
