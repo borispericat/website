@@ -8,4 +8,28 @@ block content
     .detail__wrapper 
      figure.detail__media 
       image.detail__media__image(alt=product.data.product.alt src=product.data.product.url)
-     .detail__content__wrapper
+     .detail__information
+        
+        p.detail__information=product.data.collections.data.title
+        
+        h1.detail__information__title=product.data.title
+        
+        .detail__information
+         .detail__information__highlights
+          
+          each highlight in product.data.highlights
+            p.detail__information__highlight 
+             svg.detail__information__highlight__icon 
+              use(xlink:href=`sprite-${highlight.highlights_icon.toLowerCase()}`)
+            
+             span.detail__information__highlight__text=highlight.highlights_text 
+
+        .detail__information__item
+          
+          each information in product.data.informations
+            p.detail__information__item
+             strong.detail__information__item__title=information.informations_label
+            
+             span.detail__information__item__text=information.informations_description    
+        a.detail__information__link(href=product.data.link_url.url target='_blank')=product.data.link_text
+                   
