@@ -1,15 +1,15 @@
 nav.navigation
  .navigation__wrapper 
-  a.navigation__link(href="#")
-   | Boris Pericat
+  a.navigation__link(href="/")=meta.data.title
 
   svg.navigation__link_icon 
 
   ul.navigation__list 
-   li.navigation__list__item 
-    a.navigation__list_item__link(href="/about") About 
-   li.navigation__list__item 
-    a.navigation__list_item__link(href="/collections") collections 
+   each item in navigation.data.list
+    li.navigation__list__item 
+     a.navigation__list_item__link(href=Link(item.link))=item.text 
+
+
        
      
 
