@@ -4,3 +4,12 @@ $color-white: #fff;
 $font-george-x: 'George x';
 $font-suisse-bp: 'Suisse BP';
 
+$ease-out-expo: cubic-bezier(0.19,1,0.22, 1);
+
+//index for section and element
+
+$z-indexes: (
+    'navigation',
+    'content'
+)
+

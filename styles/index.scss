@@ -2,6 +2,12 @@
     './base/reset';
 
 @import
+    './utils/functions',
+    './utils/mixin',
+    './utils/responsives',
+    './utils//variables';
+
+@import
     './pages/about/about',
     './pages/about/content',
     './pages/about/gallery',
