@@ -1,4 +1,10 @@
 @import
+    './utils/functions',
+    './utils/mixin',
+    './utils/responsives',
+    './utils//variables';
+    
+@import
     './base/reset',
     './base/base',
     './base/font.scss';
@@ -7,13 +13,7 @@
     './components/preloader';
 
     @import
-    './partials/navigation';
-    
-@import
-    './utils/functions',
-    './utils/mixin',
-    './utils/responsives',
-    './utils//variables';
+    './partials/navigation';    
 
 @import
     './pages/about/about',

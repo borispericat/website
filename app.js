@@ -95,7 +95,7 @@ const handleRequest = async (api) => {
     })
   })
 
-  console.log(assets)
+  // console.log(assets)
 
   return {
     assets,
@@ -111,6 +111,8 @@ const handleRequest = async (api) => {
 app.get('/', async (req, res) => {
   const api = await initApi(req)
   const defaults = await handleRequest(api)
+
+  console.log(defaults.home)
 
   res.render('pages/home', {
     ...defaults
