@@ -2,6 +2,10 @@
     './base/reset';
 
 @import
+    './components/navigation',
+    './components/preloader';
+    
+@import
     './utils/functions',
     './utils/mixin',
     './utils/responsives',
