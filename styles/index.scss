@@ -1,20 +1,32 @@
+
+
+/*----------------UTILS----------------*/
 @import
     './utils/functions',
     './utils/mixin',
     './utils/responsives',
     './utils//variables';
-    
+
+/*----------------SHARED----------------*/
+@import
+    './shared/descriptions',
+    './shared/titles';
+
+/*----------------BASE----------------*/    
 @import
     './base/reset',
     './base/base',
     './base/font.scss';
 
+/*----------------COMPONENTS----------------*/
 @import
     './components/preloader';
 
-    @import
+/*----------------PARTIALS----------------*/
+@import
     './partials/navigation';    
 
+/*----------------PAGES----------------*/
 @import
     './pages/about/about',
     './pages/about/content',
