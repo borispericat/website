@@ -1,5 +1,7 @@
 @import
-    './base/reset';
+    './base/reset',
+    './base/base',
+    './base/font.scss';
 
 @import
     './components/preloader';
