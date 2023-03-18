@@ -1,5 +1,18 @@
-$color-white: white;
+@import
+    '.pages/about/about',
+    '.pages/about/content',
+    '.pages/about/gallery',
+    '.pages/about/highlights';
 
-.color{
-    color: $color-white;
-}
+@import
+    '.pages/collections/collections',
+    '.pages/collections/content',
+    '.pages/collections/gallery';
+
+@import
+    '.pages/detail/detail',
+    '.pages/detail/highlights',
+    '.pages/detail/list';
+
+@import
+    '.pages/home/home';

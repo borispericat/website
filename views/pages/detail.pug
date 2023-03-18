@@ -4,13 +4,13 @@ block variables
     - var template = 'detail'
 
 block content 
-    h1.collections__title Details
+    h1.detail__title Details
     .detail__wrapper 
      figure.detail__media 
       image.detail__media__image(alt=product.data.image.alt src=product.data.image.url)
      .detail__information
         
-        p.detail__information=product.data.information
+        p.detail__information__text=product.data.information
         
         h1.detail__information__title=product.data.title
         
@@ -24,7 +24,7 @@ block content
             
              span.detail__information__highlight__text=highlight.highlights_text 
 
-        .detail__information__item
+        .detail__information__list
           
           each information in product.data.informations
             p.detail__information__item

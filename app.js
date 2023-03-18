@@ -18,7 +18,8 @@ app.use(
   bodyParser.json(),
   methodOverride(),
   errorHandler(),
-  bodyParser.urlencoded({ extended: false })
+  bodyParser.urlencoded({ extended: false }),
+  express.static(path.join(__dirname, 'public'))
 )
 
 const initApi = (req) => {
