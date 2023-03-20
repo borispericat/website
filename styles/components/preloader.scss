@@ -1,7 +1,21 @@
+.preloader {
+    @extend %cover;
+    display: none; // to replace with flex
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color-contessa;
+    color: $color-white;
+}
+
 .preloader__text {
-    
+ @extend %title-53;
+ max-width: 66rem;
 }
 
 .preloader__number {
-    
+    position: absolute;
+    bottom: 7.3rem;
+    @extend %description-14;
 }
