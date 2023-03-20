@@ -1,12 +1,20 @@
 .detail__information__list {
-    
+    margin-top: 5rem;
 }
 .detail__information__item {
-    
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+        margin-top: 4rem;
+    }
 }
 .detail__information__item__title {
-    
+    @extend %description-12;
+    width: 10rem;
+    padding-right: 2.5rem;
 }
 .detail__information__item__text {
-    
+    width: 44rem;
+  
 }

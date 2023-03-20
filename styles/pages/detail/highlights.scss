@@ -1,12 +1,23 @@
 .detail__information__highlights {
     
+    margin-top: 6rem;
 }
 .detail__information__highlight  {
-    
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+        margin-top: 4rem;
+    }
+
 }
 .detail__information__highlight__icon {
-    
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    margin-right: 3.75rem;
+    height: 4rem;
+    width: 4rem;
 }
 .detail__information__highlight__text {
-    
+    @extend %description-16;   
 }

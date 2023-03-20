@@ -1,29 +1,42 @@
-.detail__title {
-    
+.detail {
+ @extend %cover;
+ @extend %center;
+ background-color: $color-quicksand;
+ color: $color-white;
 }
+
 .detail__wrapper {
-    
+ display: flex;
+ align-items: center;
 }
+
 .detail__media {
-    
+    position: relative;
+    height: 78.2rem;
+    width: 55.4rem;
 }
 .detail__media__image {
-    
+    @extend %cover;
 }
 .detail__information {
-    
+    padding-left: 8.2rem;
 }
 .detail__information__text {
-    
+    @extend %description-12;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
 }
 .detail__information__title {
-    
+    max-width: 60rem;
+    @extend %title-120;
 }
-.detail__information {
-    
+.detail__information__content {
+    padding-left: 18rem;
 }
 
 
 .detail__information__link {
-    
+    display: inline-block;
+    @extend %title-30;
+    margin-top: 3rem;
 }

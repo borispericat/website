@@ -1,12 +1,11 @@
 .preloader {
     @extend %cover;
-    display: none; // to replace with flex
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    @extend %center;
+    display: none;
     background-color: $color-contessa;
     color: $color-white;
+    text-align: center;
+    flex-direction: column;
 }
 
 .preloader__text {
