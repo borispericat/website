@@ -111,9 +111,7 @@ const handleRequest = async (api) => {
 app.get('/', async (req, res) => {
   const api = await initApi(req)
   const defaults = await handleRequest(api)
-
-  console.log(defaults.home)
-
+  console.log(defaults.navigation.data.list[1].link)
   res.render('pages/home', {
     ...defaults
   })
@@ -131,7 +129,7 @@ app.get('/about', async (req, res) => {
 app.get('/collections', async (req, res) => {
   const api = await initApi(req)
   const defaults = await handleRequest(api)
-
+  console.log(defaults.collections[0].data.products)
   res.render('pages/collections', {
     ...defaults
   })
@@ -144,7 +142,6 @@ app.get('/detail/:uid', async (req, res) => {
   const product = await api.getByUID('product', req.params.uid, {
     fetchLinks: 'collections.title'
   })
-  console.log(product)
   res.render('pages/detail', {
     ...defaults,
     product

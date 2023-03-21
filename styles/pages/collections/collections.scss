@@ -1,14 +1,14 @@
 .collections  {
-    
+    @extend %cover;
 }
 .collections__wrapper  {
-    
+    @extend %cover;    
 }
 .collections__titles  {
-    
+ @extend %vertical-title;
 }
 .collections__titles__label {
-    
+    transform: rotate(90deg);
 }
 .collections__titles__title {
     
