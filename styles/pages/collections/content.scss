@@ -1,12 +1,22 @@
 .collection__content {
-    
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    width: 58rem;
+
+    &:not(:first-child) {
+       // display: none;
+    }
 }
 .collections__content__article {
-    
+    &:not(:first-child) {
+        display: none;
+     }
 }
 .collections__content__article__title {
-    
+    @extend %title-20;
+    padding-bottom: 2rem;
 }
 .collections__content__article__description  {
-    
+    @extend %description-12;
 }
