@@ -1,16 +1,28 @@
 .collections  {
     @extend %cover;
+
+    color: $color-quarter-spanish-white;
+    background-color: $color-quicksand;
 }
 .collections__wrapper  {
-    @extend %cover;    
+    @extend %cover;  
+    overflow: hidden;  
 }
 .collections__titles  {
  @extend %vertical-title;
 }
 .collections__titles__label {
+    @extend %description-12;
+
+    letter-spacing: 0.1rem;
+    margin: 0 3rem;
+    text-align: center;
+    text-transform: uppercase;
     transform: rotate(90deg);
 }
 .collections__titles__title {
-    
+    @extend %title-200;
+    padding-top: 2rem;
+ 
 }
 

@@ -1,22 +1,22 @@
 .collection__content {
-    position: absolute;
-    left: 5%;
-    bottom: 10%;
-    width: 58rem;
+    @extend %cover;
 
-    &:not(:first-child) {
-       // display: none;
-    }
 }
 .collections__content__article {
-    &:not(:first-child) {
-        display: none;
-     }
+    position: absolute;
+    left: 8rem;
+    bottom: 8rem;
+    opacity: 0;
+    
+    &--active {
+    opacity: 1;  
+   }
 }
 .collections__content__article__title {
-    @extend %title-20;
+    @extend %title-60;
     padding-bottom: 2rem;
 }
 .collections__content__article__description  {
-    @extend %description-12;
+    @extend %description-16;
+    max-width: 44rem;
 }

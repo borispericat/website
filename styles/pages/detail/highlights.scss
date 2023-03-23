@@ -19,5 +19,6 @@
     width: 4rem;
 }
 .detail__information__highlight__text {
-    @extend %description-16;   
+    @extend %description-16;
+    letter-spacing: 0.3rem;   
 }

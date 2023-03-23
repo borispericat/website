@@ -20,8 +20,8 @@ block content
               image.collections__gallery__media__image(alt=products.products_products.data.image.alt src=products.products_products.data.image.url)
        
       .collection__content
-        each collection in collections
-         article.collections__content__article
+        each collection, index in collections
+         article.collections__content__article(class=`${index === 0 ? 'collections__content__article--active' : ''}`)
            h3.collections__content__article__title=`${collection.data.title} ${home.data.collection}`
            p.collections__content__article__description=collection.data.description 
 

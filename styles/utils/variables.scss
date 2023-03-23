@@ -1,14 +1,18 @@
+/*----------------COLOR----------------*/
 $color-black: #000;
 $color-contessa: #C6726B;
 $color-quicksand: #BC978C;
-$color-white: #fff;
+$color-quarter-spanish-white: #F9F1E7;
+$color-cadet-blue: #B2B8C3;
+
+/*----------------FONT----------------*/
 
 $font-george-x: 'George x';
 $font-suisse-bp: 'Suisse BP';
 
 $ease-out-expo: cubic-bezier(0.19,1,0.22, 1);
 
-//index for section and element
+/*----------------INDEX----------------*/
 
 $z-indexes: (
     'navigation',
