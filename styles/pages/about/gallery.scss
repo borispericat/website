@@ -1,12 +1,17 @@
 .about__gallery  {
-    
+    @extend %cover;
+    position: relative;
 }
 .about__gallery__wrapper {
-    
+    align-items: center;
+    display: flex;
 }
 .about__gallery__media  {
-    
+    width: 44.7rem;
+    position: relative;
+    height: 63.1rem;
 }
 .about__gallery__media__image     {
-    
+    @extend %cover;
+    object-fit: cover; 
 }

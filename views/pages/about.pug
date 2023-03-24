@@ -40,10 +40,10 @@ block content
 
        if section.slice_type == 'gallery'
          section.about__gallery
-         .about__gallery__wrapper
-          each media in section.items
-              figure.about__gallery__media 
-                image.about__gallery__media__image(alt=media.image.alt src=media.image.url)
+          .about__gallery__wrapper
+           each media in section.items
+               figure.about__gallery__media 
+                 image.about__gallery__media__image(alt=media.image.alt src=media.image.url)
 
 
               

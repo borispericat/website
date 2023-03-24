@@ -1,11 +1,18 @@
 .about  {
+    @extend %cover;
     
 }
 .about__wrapper  {
-    
+    background-color: $color-cadet-blue;
 }
 
 .about__title {
-    
+    @extend %title-100;
+    text-align: center;
+    line-height: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    width: 20ch;
 }
 

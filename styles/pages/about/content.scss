@@ -1,21 +1,31 @@
 .about__content {
-    
+    @extend %cover;
+    position: relative;
+    padding-top: 5rem;
 }
 .about__content__wrapper {
-    
+
 }
 .about__content__column {
-    
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem 10rem 0 5rem;
 }
 .about__content__label {
-    
+    position: relative;
+    top: 10%;
 }
 .about__content__description {
-    
+    width: 44rem;
 }
 .about__content__media  {
-    
+    width: 44.7rem;
+    position: relative;
+    height: 63.1rem;
 }
 .about__content__media__image {
-    
+    @extend %cover;
+    object-fit: cover;
+    border-top-left-radius: 50% 45%;
+    border-top-right-radius: 50% 45%;
 }
