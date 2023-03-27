@@ -1,7 +1,15 @@
 .about__content {
     @extend %cover;
     position: relative;
-    padding-top: 5rem;
+    margin: 20rem 0;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 .about__content__wrapper {
 
