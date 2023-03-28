@@ -17,7 +17,7 @@ block content
         h2.about__title=section.primary.text
 
        if section.slice_type == 'content'
-        section.about__content
+        section(class=`${section.primary.type === 'Left' ? 'about__content--left' : 'about__content--right'}`)
             .about__content__wrapper
              .about__content__column
               p.about__content__label=PrismicH.asText(section.primary.label)

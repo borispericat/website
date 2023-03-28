@@ -21,7 +21,7 @@ block content
        
       .collection__content
         each collection, index in collections
-         article.collections__content__article(class=`${index === 0 ? 'collections__content__article--active' : ''}`)
+         article(class=`${index === 0 ? 'collections__content__article--active' : 'collections__content__article'}`)
            h3.collections__content__article__title=`${collection.data.title} ${home.data.collection}`
            p.collections__content__article__description=collection.data.description 
 
