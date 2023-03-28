@@ -1,4 +1,5 @@
 .about__hightlight {
+    height: 104rem;
     position: relative;
     margin: 20rem 0;
 
@@ -11,17 +12,58 @@
     }
 }
 .about__hightlight__wrapper {
-    
+    position: relative;
+    margin: auto;
+    height: 104rem;
+    width: 144rem;
+
+    .about__hightlight:nth-child(4) & {
+        width: 104rem;
+    }
 }
 .about__hightlight__label {
-    
+    @extend %description-12;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    width: 12ch;
+    top: 8%;
+    left: 47%;
 }
 .about__hightlight__title {
+    @extend %title-200;
+    padding-bottom: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.about__hightlight__medias{
     
 }
+
 .about__hightlight__media  {
-    
+    height: 76rem;
+    position: absolute;
+    width: 54rem;
+
+    .about__hightlight:nth-child(4) & {
+        height: 52.8rem;
+        width: 36rem;
+    }
+
+    &:first-child {
+        top: 0;
+        left: 0;
+    }
+
+    &:last-child {
+        bottom: 0;
+        right: 0;
+    }
 }
 .about__hightlight__media__image {
-    
+    @extend %cover;
+    object-fit: cover;
 }
